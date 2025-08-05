@@ -1,0 +1,5 @@
+{
+    "local_folder": "/Users/bigyanchapagain/Desktop/SyncFolder",
+    "drive_folder": "DesktopSync",
+    "ignore_patterns": [".tmp", "~$", ".DS_Store", "Thumbs.db"]
+}

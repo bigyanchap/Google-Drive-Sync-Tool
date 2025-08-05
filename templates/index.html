@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive Sync Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-cloud-sync-alt"></i>
+                <h1>Google Drive Sync</h1>
+            </div>
+            <div class="status-indicator" id="statusIndicator">
+                <span class="status-dot" id="statusDot"></span>
+                <span class="status-text" id="statusText">Stopped</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="card">
+                <h2><i class="fas fa-key"></i> Google Drive Authentication</h2>
+                <div class="credentials-section">
+                    <div class="credentials-status" id="credentialsStatus">
+                        <div class="status-item">
+                            <span class="status-label">Credentials Status:</span>
+                            <span class="status-value" id="credentialsStatusValue">Checking...</span>
+                        </div>
+                    </div>
+                    <form id="credentialsForm" class="credentials-form">
+                        <div class="form-group">
+                            <label for="credentialsFile">Upload Credentials File</label>
+                            <div class="file-upload-container">
+                                <input type="file" id="credentialsFile" name="credentials" accept=".json" class="file-input">
+                                <label for="credentialsFile" class="file-upload-label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>Choose credentials.json file</span>
+                                </label>
+                                <span class="file-name" id="fileName">No file chosen</span>
+                            </div>
+                            <small class="help-text">
+                                Download your OAuth 2.0 credentials from 
+                                <a href="https://console.cloud.google.com/apis/credentials" target="_blank">Google Cloud Console</a>
+                            </small>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="uploadBtn" disabled>
+                            <i class="fas fa-upload"></i> Upload Credentials
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-cog"></i> Configuration</h2>
+                <form id="configForm" class="config-form">
+                    <div class="form-group">
+                        <label for="localFolder">Local Folder Path</label>
+                        <input type="text" id="localFolder" name="local_folder" placeholder="Enter local folder path" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="driveFolder">Google Drive Folder Name</label>
+                        <input type="text" id="driveFolder" name="drive_folder" placeholder="Enter Drive folder name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ignorePatterns">Ignore Patterns (comma-separated)</label>
+                        <input type="text" id="ignorePatterns" name="ignore_patterns" placeholder=".tmp,~$,.DS_Store,Thumbs.db">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Save Configuration
+                    </button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-play-circle"></i> Sync Control</h2>
+                <div class="control-buttons">
+                    <button id="startBtn" class="btn btn-success">
+                        <i class="fas fa-play"></i> Start Sync
+                    </button>
+                    <button id="stopBtn" class="btn btn-danger" disabled>
+                        <i class="fas fa-stop"></i> Stop Sync
+                    </button>
+                    <button id="syncBtn" class="btn btn-info" disabled>
+                        <i class="fas fa-sync"></i> Manual Sync
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-info-circle"></i> Status Information</h2>
+                <div class="status-info">
+                    <div class="info-item">
+                        <span class="label">Local Folder:</span>
+                        <span id="localFolderDisplay" class="value">Not configured</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Drive Folder:</span>
+                        <span id="driveFolderDisplay" class="value">Not configured</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Last Sync:</span>
+                        <span id="lastSyncDisplay" class="value">Never</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-list"></i> Recent Activity</h2>
+                <div class="activity-log" id="activityLog">
+                    <div class="log-entry">
+                        <span class="timestamp">No activity yet</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="notification" id="notification">
+        <span id="notificationMessage"></span>
+        <button class="notification-close" onclick="hideNotification()">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html> 

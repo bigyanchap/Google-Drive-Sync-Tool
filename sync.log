@@ -1,0 +1,312 @@
+2025-08-05 11:49:46,461 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 11:49:47,986 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 11:49:58,934 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 11:49:59,016 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.18:8080
+2025-08-05 11:49:59,016 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 11:49:59,017 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-08-05 11:49:59,527 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 11:49:59,567 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 11:49:59,579 - werkzeug - INFO -  * Debugger PIN: 603-848-321
+2025-08-05 11:50:02,177 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:50:02] "GET / HTTP/1.1" 200 -
+2025-08-05 11:50:09,046 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:50:09] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 11:50:10,887 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:50:10] "GET /api/config HTTP/1.1" 200 -
+2025-08-05 11:50:32,368 - werkzeug - INFO -  * Detected change in '/Users/bigyanchapagain/Projects/Sync2GoogleDrive/app.py', reloading
+2025-08-05 11:50:32,389 - werkzeug - INFO -  * Detected change in '/Users/bigyanchapagain/Projects/Sync2GoogleDrive/app.py', reloading
+2025-08-05 11:50:32,981 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-08-05 11:50:33,462 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 11:50:33,502 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 11:50:33,512 - werkzeug - INFO -  * Debugger PIN: 603-848-321
+2025-08-05 11:53:58,268 - werkzeug - INFO -  * Detected change in '/Users/bigyanchapagain/Projects/Sync2GoogleDrive/app.py', reloading
+2025-08-05 11:53:58,591 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-08-05 11:53:59,095 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 11:53:59,132 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 11:53:59,142 - werkzeug - INFO -  * Debugger PIN: 603-848-321
+2025-08-05 11:54:11,777 - werkzeug - INFO -  * Detected change in '/Users/bigyanchapagain/Projects/Sync2GoogleDrive/app.py', reloading
+2025-08-05 11:54:11,777 - werkzeug - INFO -  * Detected change in '/Users/bigyanchapagain/Projects/Sync2GoogleDrive/app.py', reloading
+2025-08-05 11:54:12,342 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-08-05 11:54:12,854 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 11:54:12,896 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 11:54:12,905 - werkzeug - INFO -  * Debugger PIN: 603-848-321
+2025-08-05 11:55:31,035 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:55:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 11:55:55,003 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 11:55:55] "GET / HTTP/1.1" 200 -
+2025-08-05 11:56:23,857 - werkzeug - INFO -  * Detected change in '/Users/bigyanchapagain/Projects/Sync2GoogleDrive/app.py', reloading
+2025-08-05 11:56:23,926 - werkzeug - INFO -  * Detected change in '/Users/bigyanchapagain/Projects/Sync2GoogleDrive/app.py', reloading
+2025-08-05 11:56:24,134 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-08-05 11:56:25,123 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 11:56:25,177 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 11:56:25,187 - werkzeug - INFO -  * Debugger PIN: 603-848-321
+2025-08-05 12:04:49,402 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 12:05:29,397 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 12:05:29,468 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.18:8080
+2025-08-05 12:05:29,469 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 12:05:29,470 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-08-05 12:05:29,958 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 12:05:29,997 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 12:05:30,008 - werkzeug - INFO -  * Debugger PIN: 603-848-321
+2025-08-05 12:06:31,040 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:31] "GET / HTTP/1.1" 200 -
+2025-08-05 12:06:31,073 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:31] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-05 12:06:31,075 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:31] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-08-05 12:06:31,258 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:06:31,259 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:06:31,260 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:31] "GET /api/config HTTP/1.1" 200 -
+2025-08-05 12:06:31,346 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-05 12:06:36,261 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:06:41,261 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:06:41,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:06:46,262 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:06:51,261 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:06:51,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:06:56,262 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:06:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:01,262 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:07:01,264 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:06,260 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:11,260 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:11,261 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:07:16,262 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:21,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:07:21,264 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:26,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:31,261 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:31,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:07:36,262 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:41,261 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:41,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:07:46,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:51,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:07:51,264 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:07:56,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:07:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:01,264 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:01,265 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:08:06,264 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:11,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:11,264 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:08:16,264 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:21,262 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:21,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:08:26,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:31,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:31,264 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:08:36,263 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:41,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:41,268 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:08:46,264 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:51,265 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:08:51,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:08:56,265 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:08:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:01,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:01,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:09:06,265 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:11,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:11,267 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:09:16,265 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:21,265 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:09:21,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:26,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:31,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:09:31,267 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:36,267 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:41,268 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:09:41,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:46,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:51,265 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:09:51,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:09:56,265 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:09:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:01,265 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:01,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:10:06,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:11,267 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:10:11,268 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:16,267 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:21,268 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:21,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:10:26,266 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:31,268 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:31,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:10:36,267 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:41,267 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:41,268 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:10:46,267 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:51,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:10:51,270 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:10:56,267 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:10:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:01,268 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:01,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:11:06,267 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:11,268 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:11:11,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:16,268 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:21,268 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:11:21,270 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:26,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:31,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:11:31,270 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:36,268 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:41,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:41,270 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:11:46,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:51,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:11:51,270 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:11:56,269 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:11:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:01,271 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:01,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:12:06,270 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:11,270 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:11,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:12:16,270 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:21,271 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:21,271 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:12:26,271 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:31,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:12:31,273 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:36,270 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:41,271 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:12:41,273 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:46,271 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:51,271 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:12:51,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:12:56,271 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:12:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:01,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:13:01,273 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:06,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:11,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:13:11,273 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:16,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:21,273 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:21,274 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:13:26,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:31,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:31,273 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:13:36,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:41,274 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:41,274 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:13:46,273 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:51,274 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:13:51,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:13:56,273 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:13:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:01,273 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:01,274 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:14:06,274 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:11,274 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:14:11,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:16,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:21,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:21,276 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:14:26,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:31,274 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:31,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:14:36,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:41,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:41,277 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:14:46,274 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:51,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:14:51,276 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:14:56,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:14:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:01,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:01,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:15:06,275 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:11,276 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:11,278 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:15:16,274 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:21,277 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:21,278 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:15:26,277 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:31,278 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:31,278 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:15:36,277 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:41,270 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:41,272 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:15:46,259 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:51,255 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:15:51,256 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:15:56,250 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:15:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:01,247 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:16:01,248 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:06,244 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:11,243 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:11,245 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:16:16,241 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:21,241 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:21,242 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:16:26,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:31,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:16:31,241 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:36,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:41,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:41,241 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:16:46,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:51,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:16:51,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:16:56,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:16:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:01,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:01,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:17:06,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:11,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:11,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:17:16,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:21,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:17:21,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:26,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:31,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:31,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:17:36,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:41,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:41,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:17:46,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:51,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:17:51,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:17:56,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:17:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:01,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:01] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:01,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:18:06,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:11,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:18:11,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:16,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:21,237 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:21,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:18:26,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:31,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:31,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:18:36,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:41,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:41,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:18:46,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:51,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:51] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:18:51,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:18:56,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:18:56] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:19:01,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:19:01] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:19:21,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:19:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:19:26,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:19:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:19:31,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:19:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:19:31,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:19:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:22:26,349 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:22:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:23:03,823 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 12:23:03,902 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.18:8080
+2025-08-05 12:23:03,902 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-05 12:23:03,903 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-08-05 12:23:04,369 - drive_sync - INFO - Starting Google Drive Sync Tool Web UI
+2025-08-05 12:23:04,408 - werkzeug - WARNING -  * Debugger is active!
+2025-08-05 12:23:04,418 - werkzeug - INFO -  * Debugger PIN: 603-848-321
+2025-08-05 12:23:06,241 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:06] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:23:11,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:11] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:23:11,242 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:11] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:23:16,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:16] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:23:21,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:21] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:23:21,241 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:21] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:23:26,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:26] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:23:31,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:31] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:23:31,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:31] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:23:36,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:36] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:23:41,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:41] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:23:41,241 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:41] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:23:46,238 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:46] "GET /api/status HTTP/1.1" 200 -
+2025-08-05 12:23:51,239 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:51] "GET /api/credentials/status HTTP/1.1" 200 -
+2025-08-05 12:23:51,240 - werkzeug - INFO - 127.0.0.1 - - [05/Aug/2025 12:23:51] "GET /api/status HTTP/1.1" 200 -
