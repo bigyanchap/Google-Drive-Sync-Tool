@@ -168,9 +168,29 @@ Google-Drive-Sync-Tool/
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
+## 📄 License & Usage Terms
 
-This project is open source and available under the MIT License.
+### Individual Use
+This software is **free for individual, personal use**. You may download, install, and use this tool for your personal file synchronization needs without any cost.
+
+### Commercial Use
+**Commercial licensing is required for business and organizational use.** This includes but is not limited to:
+- Companies and corporations
+- Government agencies
+- Educational institutions
+- Non-profit organizations
+- Any entity using this software for business purposes
+
+### Licensing Inquiries
+For commercial licensing, enterprise support, or bulk deployments, please contact:
+- **Email**: admin@onlysatvic.com
+- **Subject**: Commercial License Inquiry - Google Drive Sync Tool
+
+### Terms
+- Individual users may use this software freely for personal purposes
+- Commercial entities must obtain proper licensing before deployment
+- Unauthorized commercial use is prohibited
+- This software is provided "as is" without warranty
 
 ## 🆘 Support
 
