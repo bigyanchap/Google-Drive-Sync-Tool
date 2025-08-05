@@ -24,33 +24,25 @@
         <main class="main-content">
             <div class="card">
                 <h2><i class="fas fa-key"></i> Google Drive Authentication</h2>
-                <div class="credentials-section">
-                    <div class="credentials-status" id="credentialsStatus">
+                <div class="auth-section">
+                    <div class="auth-status" id="authStatus">
                         <div class="status-item">
-                            <span class="status-label">Credentials Status:</span>
-                            <span class="status-value" id="credentialsStatusValue">Checking...</span>
+                            <span class="status-label">Authentication Status:</span>
+                            <span class="status-value" id="authStatusValue">Checking...</span>
                         </div>
                     </div>
-                    <form id="credentialsForm" class="credentials-form">
-                        <div class="form-group">
-                            <label for="credentialsFile">Upload Credentials File</label>
-                            <div class="file-upload-container">
-                                <input type="file" id="credentialsFile" name="credentials" accept=".json" class="file-input">
-                                <label for="credentialsFile" class="file-upload-label">
-                                    <i class="fas fa-cloud-upload-alt"></i>
-                                    <span>Choose credentials.json file</span>
-                                </label>
-                                <span class="file-name" id="fileName">No file chosen</span>
-                            </div>
-                            <small class="help-text">
-                                Download your OAuth 2.0 credentials from 
-                                <a href="https://console.cloud.google.com/apis/credentials" target="_blank">Google Cloud Console</a>
-                            </small>
+                    <div class="auth-actions" id="authActions">
+                        <div class="auth-info">
+                            <p>Sign in with your Google account to sync files with Google Drive.</p>
+                            <p><small>This app will only access files in the specified Drive folder.</small></p>
                         </div>
-                        <button type="submit" class="btn btn-primary" id="uploadBtn" disabled>
-                            <i class="fas fa-upload"></i> Upload Credentials
+                        <button id="loginBtn" class="btn btn-primary">
+                            <i class="fas fa-sign-in-alt"></i> Sign in with Google
                         </button>
-                    </form>
+                        <button id="logoutBtn" class="btn btn-secondary" style="display: none;">
+                            <i class="fas fa-sign-out-alt"></i> Sign Out
+                        </button>
+                    </div>
                 </div>
             </div>
 

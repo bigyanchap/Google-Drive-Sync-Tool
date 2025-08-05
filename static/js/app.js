@@ -9,11 +9,9 @@ const startBtn = document.getElementById('startBtn');
 const stopBtn = document.getElementById('stopBtn');
 const syncBtn = document.getElementById('syncBtn');
 const configForm = document.getElementById('configForm');
-const credentialsForm = document.getElementById('credentialsForm');
-const credentialsFile = document.getElementById('credentialsFile');
-const fileName = document.getElementById('fileName');
-const uploadBtn = document.getElementById('uploadBtn');
-const credentialsStatusValue = document.getElementById('credentialsStatusValue');
+const loginBtn = document.getElementById('loginBtn');
+const logoutBtn = document.getElementById('logoutBtn');
+const authStatusValue = document.getElementById('authStatusValue');
 const localFolderInput = document.getElementById('localFolder');
 const driveFolderInput = document.getElementById('driveFolder');
 const ignorePatternsInput = document.getElementById('ignorePatterns');
@@ -26,9 +24,9 @@ const activityLog = document.getElementById('activityLog');
 document.addEventListener('DOMContentLoaded', function() {
     loadConfig();
     updateStatus();
-    checkCredentialsStatus();
+    checkAuthStatus();
     setInterval(updateStatus, 5000); // Update status every 5 seconds
-    setInterval(checkCredentialsStatus, 10000); // Check credentials every 10 seconds
+    setInterval(checkAuthStatus, 10000); // Check auth status every 10 seconds
 });
 
 // Load configuration from server
@@ -257,39 +255,74 @@ function updateLastSyncDisplay() {
     }
 }
 
-// Credentials file selection
-credentialsFile.addEventListener('change', function(e) {
-    const file = e.target.files[0];
-    if (file) {
-        fileName.textContent = file.name;
-        uploadBtn.disabled = false;
-    } else {
-        fileName.textContent = 'No file chosen';
-        uploadBtn.disabled = true;
+// Login button click handler
+loginBtn.addEventListener('click', async function() {
+    try {
+        loginBtn.disabled = true;
+        loginBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Starting...';
+        
+        const response = await fetch('/api/auth/login');
+        const result = await response.json();
+        
+        if (result.error) {
+            showNotification(result.error, 'error');
+        } else {
+            // Open Google OAuth in a new window
+            const authWindow = window.open(result.auth_url, 'google_auth', 'width=500,height=600');
+            
+            // Check if the window was opened successfully
+            if (authWindow) {
+                showNotification('Please complete authentication in the popup window', 'info');
+                addActivityLog('Google authentication started');
+                
+                // Poll for authentication completion
+                const checkAuth = setInterval(async () => {
+                    try {
+                        const authResponse = await fetch('/api/auth/status');
+                        const authStatus = await authResponse.json();
+                        
+                        if (authStatus.authenticated) {
+                            clearInterval(checkAuth);
+                            authWindow.close();
+                            showNotification('Authentication successful!', 'success');
+                            addActivityLog('Google authentication completed');
+                            checkAuthStatus();
+                        }
+                    } catch (error) {
+                        console.error('Error checking auth status:', error);
+                    }
+                }, 2000);
+                
+                // Stop polling after 5 minutes
+                setTimeout(() => {
+                    clearInterval(checkAuth);
+                    if (!authWindow.closed) {
+                        authWindow.close();
+                        showNotification('Authentication timed out. Please try again.', 'error');
+                    }
+                }, 300000);
+            } else {
+                showNotification('Please allow popups and try again', 'error');
+            }
+        }
+        
+    } catch (error) {
+        console.error('Error starting authentication:', error);
+        showNotification('Failed to start authentication', 'error');
+    } finally {
+        loginBtn.disabled = false;
+        loginBtn.innerHTML = '<i class="fas fa-sign-in-alt"></i> Sign in with Google';
     }
 });
 
-// Upload credentials
-credentialsForm.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    const formData = new FormData();
-    const file = credentialsFile.files[0];
-    
-    if (!file) {
-        showNotification('Please select a credentials file', 'error');
-        return;
-    }
-    
-    formData.append('credentials', file);
-    
+// Logout button click handler
+logoutBtn.addEventListener('click', async function() {
     try {
-        uploadBtn.disabled = true;
-        uploadBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Uploading...';
+        logoutBtn.disabled = true;
+        logoutBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Signing out...';
         
-        const response = await fetch('/api/credentials/upload', {
-            method: 'POST',
-            body: formData
+        const response = await fetch('/api/auth/logout', {
+            method: 'POST'
         });
         
         const result = await response.json();
@@ -297,41 +330,42 @@ credentialsForm.addEventListener('submit', async function(e) {
         if (result.error) {
             showNotification(result.error, 'error');
         } else {
-            showNotification('Credentials uploaded successfully', 'success');
-            addActivityLog('Google Drive credentials uploaded');
-            checkCredentialsStatus();
+            showNotification('Signed out successfully', 'success');
+            addActivityLog('Google authentication signed out');
+            checkAuthStatus();
         }
         
     } catch (error) {
-        console.error('Error uploading credentials:', error);
-        showNotification('Failed to upload credentials', 'error');
+        console.error('Error signing out:', error);
+        showNotification('Failed to sign out', 'error');
     } finally {
-        uploadBtn.disabled = false;
-        uploadBtn.innerHTML = '<i class="fas fa-upload"></i> Upload Credentials';
+        logoutBtn.disabled = false;
+        logoutBtn.innerHTML = '<i class="fas fa-sign-out-alt"></i> Sign Out';
     }
 });
 
-// Check credentials status
-async function checkCredentialsStatus() {
+// Check authentication status
+async function checkAuthStatus() {
     try {
-        const response = await fetch('/api/credentials/status');
+        const response = await fetch('/api/auth/status');
         const status = await response.json();
         
-        if (status.exists && status.valid) {
-            credentialsStatusValue.textContent = 'Valid';
-            credentialsStatusValue.className = 'status-value valid';
-        } else if (status.exists && !status.valid) {
-            credentialsStatusValue.textContent = 'Invalid';
-            credentialsStatusValue.className = 'status-value invalid';
+        if (status.authenticated) {
+            authStatusValue.textContent = 'Authenticated';
+            authStatusValue.className = 'status-value valid';
+            loginBtn.style.display = 'none';
+            logoutBtn.style.display = 'inline-block';
         } else {
-            credentialsStatusValue.textContent = 'Missing';
-            credentialsStatusValue.className = 'status-value missing';
+            authStatusValue.textContent = 'Not Authenticated';
+            authStatusValue.className = 'status-value missing';
+            loginBtn.style.display = 'inline-block';
+            logoutBtn.style.display = 'none';
         }
         
     } catch (error) {
-        console.error('Error checking credentials status:', error);
-        credentialsStatusValue.textContent = 'Error';
-        credentialsStatusValue.className = 'status-value invalid';
+        console.error('Error checking auth status:', error);
+        authStatusValue.textContent = 'Error';
+        authStatusValue.className = 'status-value invalid';
     }
 }
 

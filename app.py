@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request, flash
+from flask import Flask, render_template, jsonify, request, flash, redirect, url_for, session
 from flask_cors import CORS
 import json
 import os
@@ -6,9 +6,11 @@ import threading
 import logging
 from werkzeug.utils import secure_filename
 from core.sync_engine import SyncEngine
+from core.auth import authenticate, authenticate_with_code, get_auth_url, is_authenticated, clear_credentials
 from ui.tray import create_tray_icon
 
 app = Flask(__name__)
+app.secret_key = 'your-secret-key-change-this-in-production'
 CORS(app)
 
 # Global variables
@@ -138,71 +140,58 @@ def stop_sync():
     
     return jsonify({'message': 'Sync engine stopped'})
 
-@app.route('/api/credentials/upload', methods=['POST'])
-def upload_credentials():
-    """Upload Google Drive credentials file"""
+
+
+@app.route('/api/auth/status')
+def check_auth_status():
+    """Check if user is authenticated"""
+    authenticated = is_authenticated()
+    return jsonify({
+        'authenticated': authenticated
+    })
+
+@app.route('/api/auth/login')
+def start_auth():
+    """Start OAuth authentication flow"""
     try:
-        if 'credentials' not in request.files:
-            return jsonify({'error': 'No file uploaded'}), 400
+        auth_url, state = get_auth_url()
+        session['oauth_state'] = state
+        return jsonify({
+            'auth_url': auth_url
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/oauth2callback')
+def oauth2callback():
+    """Handle OAuth callback"""
+    try:
+        # Get authorization code from callback
+        code = request.args.get('code')
+        state = request.args.get('state')
         
-        file = request.files['credentials']
-        if file.filename == '':
-            return jsonify({'error': 'No file selected'}), 400
+        # Verify state matches
+        if state != session.get('oauth_state'):
+            return jsonify({'error': 'Invalid state parameter'}), 400
         
-        if file and file.filename.endswith('.json'):
-            filename = secure_filename(file.filename)
-            filepath = os.path.join(os.path.dirname(__file__), 'credentials.json')
-            
-            # Save the file
-            file.save(filepath)
-            
-            # Validate the JSON structure
-            try:
-                with open(filepath, 'r') as f:
-                    creds_data = json.load(f)
-                
-                # Check if it has the expected Google OAuth structure
-                if 'installed' in creds_data or 'web' in creds_data:
-                    return jsonify({'message': 'Credentials uploaded successfully'})
-                else:
-                    # Remove invalid file
-                    os.remove(filepath)
-                    return jsonify({'error': 'Invalid credentials file format'}), 400
-                    
-            except json.JSONDecodeError:
-                # Remove invalid file
-                os.remove(filepath)
-                return jsonify({'error': 'Invalid JSON file'}), 400
+        # Complete authentication
+        creds = authenticate_with_code(code)
+        if creds:
+            return render_template('auth_success.html')
         else:
-            return jsonify({'error': 'Please upload a valid JSON file'}), 400
+            return render_template('auth_error.html')
             
     except Exception as e:
-        return jsonify({'error': f'Error uploading credentials: {str(e)}'}), 500
+        return render_template('auth_error.html', error=str(e))
 
-@app.route('/api/credentials/status')
-def check_credentials():
-    """Check if credentials file exists"""
-    creds_path = os.path.join(os.path.dirname(__file__), 'credentials.json')
-    exists = os.path.exists(creds_path)
-    
-    if exists:
-        try:
-            with open(creds_path, 'r') as f:
-                creds_data = json.load(f)
-            return jsonify({
-                'exists': True,
-                'valid': 'installed' in creds_data or 'web' in creds_data
-            })
-        except:
-            return jsonify({
-                'exists': True,
-                'valid': False
-            })
-    else:
-        return jsonify({
-            'exists': False,
-            'valid': False
-        })
+@app.route('/api/auth/logout')
+def logout():
+    """Clear authentication credentials"""
+    try:
+        clear_credentials()
+        return jsonify({'message': 'Logged out successfully'})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 def main():
     """Main application entry point"""
@@ -218,6 +207,16 @@ def main():
     
     logger = logging.getLogger('drive_sync')
     logger.info("Starting Google Drive Sync Tool Web UI")
+    
+    # Check if OAuth credentials are configured
+    from core.auth import OAUTH_CLIENT_CONFIG
+    if (OAUTH_CLIENT_CONFIG['web']['client_id'] == 'YOUR_CLIENT_ID.apps.googleusercontent.com' or 
+        OAUTH_CLIENT_CONFIG['web']['client_secret'] == 'YOUR_CLIENT_SECRET'):
+        logger.warning("OAuth credentials not configured. Please follow the OAUTH_SETUP.md guide.")
+        print("\n" + "="*60)
+        print("OAuth credentials not configured!")
+        print("Please follow the OAUTH_SETUP.md guide to set up your credentials.")
+        print("="*60 + "\n")
     
     # Start the Flask app
     app.run(host='0.0.0.0', port=8080, debug=True)

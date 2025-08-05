@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Error - Google Drive Sync Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-result">
+            <div class="auth-error">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h1>Authentication Failed</h1>
+                <p>There was an error during the authentication process.</p>
+                {% if error %}
+                <div class="error-details">
+                    <strong>Error:</strong> {{ error }}
+                </div>
+                {% endif %}
+                <p>Please try again or contact support if the problem persists.</p>
+                <button onclick="window.close()" class="btn btn-primary">
+                    <i class="fas fa-times"></i> Close Window
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .auth-result {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .auth-error {
+            text-align: center;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+        
+        .auth-error i {
+            font-size: 4rem;
+            color: #ef4444;
+            margin-bottom: 20px;
+        }
+        
+        .auth-error h1 {
+            color: var(--text-primary);
+            margin-bottom: 15px;
+        }
+        
+        .auth-error p {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+        
+        .error-details {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 6px;
+            padding: 10px;
+            margin: 15px 0;
+            color: #ef4444;
+            font-size: 0.9rem;
+        }
+    </style>
+</body>
+</html> 

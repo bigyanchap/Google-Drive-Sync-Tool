@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Success - Google Drive Sync Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-result">
+            <div class="auth-success">
+                <i class="fas fa-check-circle"></i>
+                <h1>Authentication Successful!</h1>
+                <p>You have successfully signed in to Google Drive.</p>
+                <p>You can now close this window and return to the main application.</p>
+                <button onclick="window.close()" class="btn btn-primary">
+                    <i class="fas fa-times"></i> Close Window
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .auth-result {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .auth-success {
+            text-align: center;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+        
+        .auth-success i {
+            font-size: 4rem;
+            color: #10b981;
+            margin-bottom: 20px;
+        }
+        
+        .auth-success h1 {
+            color: var(--text-primary);
+            margin-bottom: 15px;
+        }
+        
+        .auth-success p {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+    </style>
+</body>
+</html> 
