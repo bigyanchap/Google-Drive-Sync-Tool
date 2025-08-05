@@ -1,6 +1,6 @@
 # Google Drive Sync Tool
 
-A modern Python-based tool to automatically sync a local folder with Google Drive using a beautiful web interface and simplified OAuth authentication.
+A modern Python-based tool to automatically sync a local folder with Google Drive's single folder using a beautiful web interface and simplified OAuth authentication.
 
 ## ✨ Features
 
